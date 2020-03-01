@@ -211,7 +211,7 @@ export default class Map extends React.Component {
                               //path={[{lat:43.63708, lng:-79.407}, {lat:43.1, lng:-78.0}]}
                               geodesic={true}
                               options={{
-                                strokeColor: "#ff2527",
+                                strokeColor: "#ff0000",
                                 strokeOpacity: 0.75,
                                 strokeWeight: 2
                               }}
