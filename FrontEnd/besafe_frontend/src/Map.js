@@ -133,6 +133,7 @@ export default class Map extends React.Component {
         best = this.state.score[i];
       }
       let color = "";
+      console.log(this.state.score[i])
       if (this.state.score[i] <= 2) {
         color = "green";
       } else if (this.state.score[i] > 2 && this.state.score[i] <= 3.5) {
