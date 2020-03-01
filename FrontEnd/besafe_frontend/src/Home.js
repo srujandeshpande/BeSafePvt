@@ -36,8 +36,8 @@ class Home extends Component {
                             <Row className="vertical-center">
                                 <Col lg={5} style={{ textAlign: 'left', display: 'flex', alignItems: 'center' }}>
                                     <div>
-                                        <h1>Find Safer Routes</h1>
-                                        <h3>with RouteSafer</h3></div>
+                                        <h1>BeSafe</h1>
+                                        <h3>with BeSafe</h3></div>
                                 </Col>
                                 <Col lg={7}>
                                     <img src={HomepageIllustration} />
@@ -48,7 +48,7 @@ class Home extends Component {
                     <div className="block about">
                         <Container className="home-wrapper">
                             <Container className="vertical-center">
-                                <Row><Col><h1 style={{ color: 'white' }}>About RouteSafer</h1></Col></Row>
+                                <Row><Col><h1 style={{ color: 'white' }}>BeSafe</h1></Col></Row>
                                 <Row className="icons">
                                     <Col><img src={ai1icon} className="about-icon" /></Col>
                                     <Col><img src={ai2icon} className="about-icon" /></Col>
@@ -56,13 +56,7 @@ class Home extends Component {
                                 </Row>
                                 <Row style={{ color: 'white' }}>
                                     <Col>
-                                        <p>Leveraging AI technology, RouteSafer provides safer alternatives to Google Map routes and aims to reduce automotive collisions in cities. </p>
-                                    </Col>
-                                    <Col>
-                                        <p>Using machine learning algorithms such as k-nearest neighbors, RouteSafer analyzes over 20 years of collision data and uses over 11 parameters to make an intelligent estimate about the safety of a route, and ensure the user arrives safe.</p>
-                                    </Col>
-                                    <Col>
-                                        <p>RouteSafer’s machine learning model can also help insurance companies evaluate the risk in a  driver’s everyday commute, thus helping the insurance provider to more accurately value premiums. </p>
+                                        <p>BeSafe</p>
                                     </Col>
                                 </Row>
                             </Container>
@@ -93,18 +87,19 @@ class Home extends Component {
                             </Container>
                         </Container>
                     </div>
+                  -->
                 </ReactPageScroller>
 
-                
+
                 <Navbar expand="lg" fixed="top" className="navbar">
                     <Navbar.Brand onClick={()=> this.goToPage(0)} style={{color: 'white'}}><img src={logo} style={{margin: '10px'}} className="nav-logo" />
-                        RouteSafer
+                        BeSafe
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto" >
-                            <Nav.Link onClick={()=> this.goToPage(1)} style={{color:'white'}}>About</Nav.Link>
-                            <Nav.Link onClick={()=> this.goToPage(2)} style={{color:'white'}}>Product</Nav.Link>
+                            <Nav.Link onClick={()=> this.goToPage(1)} style={{color:'white'}}>About Us</Nav.Link>
+                            <Nav.Link onClick={()=> this.goToPage(2)} style={{color:'white'}}>Contact Us</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

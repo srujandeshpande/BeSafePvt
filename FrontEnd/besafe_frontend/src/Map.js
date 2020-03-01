@@ -12,8 +12,8 @@ import "./Map.css";
 const MapWithAMarker = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
-      defaultZoom={12}
-      defaultCenter={{ lat: 43.656761, lng: -79.380727 }}
+      defaultZoom={11}
+      defaultCenter={{ lat: 30.266666, lng: -97.733330 }}
     >
       {props.showDirections ? props.line : null}
       {props.or ? (
