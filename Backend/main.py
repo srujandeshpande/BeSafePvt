@@ -10,7 +10,6 @@ CORS(app)
 def fetching_lat_lng(origin, destination):
     test = requests.get("https://maps.googleapis.com/maps/api/directions/json?origin=" + origin + "&destination=" + destination + "&key=AIzaSyCHttcfy83akWGX0yXCX53DnrVN1anZFEM&alternatives=true").json()
     #test = requests.get("https://maps.googleapis.com/maps/api/directions/json?origin=" + origin + "&destination=" + destination + "&key=AIzaSyAW6U840k0zHzm18XXkXcoCCyHftTm1JHY&alternatives=true").json()
-
     routes = test['routes']
     #print(len(Lat_and_Lng[4]))
     Lat_and_Lng = []

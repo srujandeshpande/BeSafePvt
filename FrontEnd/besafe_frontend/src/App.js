@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Home from './Home';
 import Map from './Map';
+import Intermediate from './Intermediate'
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 

@@ -20,8 +20,8 @@ p {
 }
 
 .navbar {
-    background-color: #00526C;
-    color: white;
+    background-color: rgb(49, 29, 38);
+    color: rgb(255, 255, 255);
 }
 
 .nav-logo {

@@ -11,7 +11,7 @@ import "./Map.css";
 
 const MapWithAMarker = withScriptjs(
   withGoogleMap(props => (
-    <GoogleMap
+  <GoogleMap
       defaultZoom={11}
       defaultCenter={{ lat: 30.266666, lng: -97.733330 }}
     >
@@ -152,11 +152,11 @@ export default class Map extends React.Component {
     return (
       <div className="container" id="wrapper">
         <Row>
-          <Col xs={4} className="side-bar">
+          <Col xs = {4} className="input">
             <div className="container">
               <Form className="form" onSubmit={this.handleSubmit}>
                 <Form.Group controlId="origin">
-                  <Form.Label>Origin</Form.Label>
+                  <Form.Label class="head">Origin</Form.Label>
                   <Form.Control
                     type="text"
                     onChange={this.handleOriginChange}
@@ -164,7 +164,7 @@ export default class Map extends React.Component {
                   />
                 </Form.Group>
                 <Form.Group controlId="destination">
-                  <Form.Label>Destination</Form.Label>
+                  <Form.Label class="head">Destination</Form.Label>
                   <Form.Control
                     type="text"
                     onChange={this.handleDestinationChange}
@@ -260,7 +260,7 @@ export default class Map extends React.Component {
               containerElement={
                 <div style={{ width: "100%", marginLeft: 0, marginRight: 0 }} />
               }
-              mapElement={<div style={{ height: `100vh`, width: "100%" }} />}
+              mapElement={<div style={{height: `80vh`, width: "100%",margin:`auto` }} />}
               showDirections={this.state.showDirections}
               line={this.state.displayedLine}
               or={this.state.originCoor}
