@@ -19,7 +19,7 @@ def fetching_lat_lng(origin, destination):
         for leg in route['legs']:
             for steps in leg['steps']:
                 each_route += polyline.decode(steps['polyline']['points'])
-                #print(polyline.decode(steps['polyline']['points']))
+                print(polyline.decode(steps['polyline']['points']))
         Lat_and_Lng.append(each_route)
 
     return Lat_and_Lng

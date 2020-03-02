@@ -12,8 +12,8 @@ import "./Map.css";
 const MapWithAMarker = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
-      defaultZoom={12}
-      defaultCenter={{ lat: 43.656761, lng: -79.380727 }}
+      defaultZoom={11}
+      defaultCenter={{ lat: 30.266666, lng: -97.733330 }}
     >
       {props.showDirections ? props.line : null}
       {props.or ? (
@@ -133,6 +133,7 @@ export default class Map extends React.Component {
         best = this.state.score[i];
       }
       let color = "";
+      console.log(this.state.score[i])
       if (this.state.score[i] <= 2) {
         color = "green";
       } else if (this.state.score[i] > 2 && this.state.score[i] <= 3.5) {
@@ -211,7 +212,7 @@ export default class Map extends React.Component {
                               //path={[{lat:43.63708, lng:-79.407}, {lat:43.1, lng:-78.0}]}
                               geodesic={true}
                               options={{
-                                strokeColor: "#ff2527",
+                                strokeColor: "#ff0000",
                                 strokeOpacity: 0.75,
                                 strokeWeight: 2
                               }}
